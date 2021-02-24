@@ -1,0 +1,41 @@
+@media screen and (max-width: 1023px) {
+    #right_part, nav.right {
+        display: none;
+    }
+    #left_part, nav.left .nav-popup-bg, nav.left .nav-popup{
+        width: 100%;
+    }
+
+    #l_meteo_map, #l_aero_map {
+      width: calc(100vw - 100px);
+      height: calc(100vw / 1.618 - 10px);
+      margin: 0 auto;
+    }
+    #l_meteo_popup, #l_aero_popup {
+        width: 100vw;
+    }
+    #l_meteo_popup_bg, #l_aero_popup_bg {
+        height: 200vh;
+    }
+    #l_meteo_popup_cont, #l_aero_popup_cont {
+        width: calc(100vw - 200px);
+    }
+    #l_meteo_popup_cont img {
+        width: calc(100vw - 180px);
+    }
+}
+
+@media screen and (min-device-aspect-ratio: 5/4) and (max-device-aspect-ratio: 4/3) {
+    .popup {
+        line-height: 100vh;
+    }
+    .popup_img {
+        width: auto;
+        height: auto;
+        max-width: calc(100vw - 220px);
+        vertical-align: middle;
+    }
+    .popup_previous {
+        width: 85px;
+    }
+}

@@ -1,0 +1,560 @@
+sup {
+    color: #2d91eb;
+    font-size: 10px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    color: #555;
+    font: normal 17px Arial, serif !important;
+}
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    font: normal 22px 'Open Sans', Arial, serif !important;
+    line-height: 34px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+/*overflow style*/
+::-webkit-scrollbar-button {
+background-image:url('');
+background-repeat:no-repeat;
+width:5px;
+height:0px
+}
+
+::-webkit-scrollbar-track {
+background-color:#eee;
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 3px;
+border-radius: 3px;
+background-color: #878787;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background-color:#555;
+}
+
+::-webkit-resizer{
+background-image:url('');
+background-repeat:no-repeat;
+width:4px;
+height:0px
+}
+
+::-webkit-scrollbar{
+width: 6px;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background: #f8f8f8;
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,.07), 0 1px 2px 0 rgba(0,0,0,.03);
+}
+
+.flex {
+    display: flex;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+}
+
+.main_text, .feedback_button, .extra_info {
+    line-height: 50px;
+    margin-right: 25px;
+}
+
+.main_text {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.feedback_button a:hover {
+    display: block;
+    color:#000;
+    cursor: pointer;
+}
+
+.form{width: 150px;}
+
+.form p {
+    width: 150px;
+    text-align: center;
+    margin: 0;
+}
+
+.radio-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  font-size: 15px;
+  border: 1px solid #555;
+  border-radius: 3px;
+}
+
+.radio-container *{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.radio-container .radio-btn{
+  border-right: 2px solid #555;
+  overflow: hidden;
+}
+
+.radio-container .radio-btn:last-child{
+  border-right: 0px;
+}
+
+.radio-container .radio-btn.nth-2{width: calc(50% - 1px);}
+.radio-container .radio-btn label{
+  background-color: transparent;
+  color: #000;
+  display: block;
+  padding: 4px 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.radio-container .radio-btn input{display: none;}
+.radio-container .radio-btn input:checked + label{
+  background-color: #555;
+  color: #fff;
+}
+
+/* sections */
+#section_wrapper {
+    display: flex;
+    height: calc(100vh - 110px);
+}
+
+section {
+    width: calc(100vw / 2 - 35px);
+    height: calc(100vh - 110px);
+}
+
+#left_part {padding: 20px 10px 20px 20px;}
+#right_part {padding: 20px 20px 20px 10px;}
+
+/* start_screen */
+#l_start_screen, #r_start_screen {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: calc(100vh - 200px);
+}
+#l_start_screen div {
+    margin: auto;
+    border-bottom: 1px solid #555;
+    font-size: 1.5em;
+}
+#r_start_screen img {
+    width: 100%;
+    margin: auto;
+}
+
+#r_start_screen img[src="img/msk-foto-3.svg"] {
+    width: 50%;
+}
+
+/* workspace */
+.workspace {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.07);
+    padding: 30px;
+    height: calc(100vh - 160px);
+}
+.workspace h1 {
+    height: 68px;
+}
+
+nav.horizontal {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+nav.horizontal ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+}
+
+nav.horizontal li {
+    line-height: 40px;
+    padding: 0 15px;
+}
+
+nav.horizontal li a {
+    display: block;
+
+}
+
+nav.horizontal li a:hover {
+    display: block;
+    color:#000;
+    cursor: pointer;
+}
+
+nav.horizontal .selected {
+    color: #000;
+    border-bottom: 2px solid #0606A3;
+}
+
+.workspace_nav_wrapper {
+    margin-bottom: 20px;
+}
+
+.workspace_nav div{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.workspace_nav {
+    margin-bottom: 15px;
+}
+
+.elem, .domen {
+    max-width: 215px;
+}
+
+.controls {
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+    min-width: 35px;
+}
+
+.controls:hover {
+    color: #000;
+    border-bottom: 2px solid #0606A3;
+}
+
+.controls:focus, select {
+    outline: none;
+}
+
+.workspace_button label[for="l_domen0_speed"], .workspace_button label[for="l_domen1_speed"], .workspace_button label[for="l_domen2_speed"], .workspace_button label[for="l_domen3_speed"], label[for="l_aero_speed"], .workspace_button label[for="l_diana_speed"], .workspace_button label[for="r_domen0_speed"], .workspace_button label[for="r_domen1_speed"], .workspace_button label[for="r_domen2_speed"], .workspace_button label[for="r_domen3_speed"], label[for="r_aero_speed"], .workspace_button label[for="r_diana_speed"] {
+    white-space: nowrap;
+}
+
+.checkbox {
+    float: right;
+    margin-right: 40px;
+    display: none;
+    width: 200px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label:before {
+    content: "\2713";
+    color: transparent;
+    display: inline-block;
+    border: 1px solid #555;
+    font-size: 20px;
+    line-height: 22px;
+    margin: -5px 5px 0 0;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    transition: color ease .3s;
+}
+
+input[type=checkbox]:checked + label:before {
+    color: #000;
+}
+
+input[type=checkbox]:hover + label {
+    color: #000;
+}
+
+.workspace_map.height {
+    display: flex;
+    justify-content: center;
+}
+
+#l_map_wrapper img.height, #r_map_wrapper img.height {
+    height: calc(100vh - 430px);
+}
+
+#l_meteo_img_wrapper img.height, #r_meteo_img_wrapper img.height {
+    height: calc(100vh - 200px);
+}
+
+#l_aero_img_wrapper img.height, #r_aero_img_wrapper img.height {
+    height: calc(100vh - 270px);
+}
+
+.workspace_map img.width {
+    width: 100%;
+}
+
+.popup {
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    display:none;
+    text-align:center;
+}
+
+.popup_bg {
+    background:rgba(0,0,0,0.7);
+    position:absolute;
+    z-index:10;
+    height:1100px;
+    width:100%;
+}
+
+.popup_img {
+    position: relative;
+    margin: 0 auto;
+    z-index:11;
+    height:calc(100vh - 80px);
+    margin: 40px;
+    border: 1px solid #555;
+    cursor: pointer;
+}
+
+.popup_img_diana {
+    position: relative;
+    margin: 0 auto;
+    z-index:11;
+    width: calc(100vw - 350px);
+    margin: 40px;
+    border: 1px solid #555;
+    cursor: pointer;
+}
+
+.popup_previous, .popup_next {
+    position:absolute;
+    height: 100%;
+    width: 100px;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 50px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.popup_previous {
+    top: 0; left:0;
+}
+
+.popup_next {
+    top: 0; right:0;
+}
+
+/*meteogram*/
+
+#l_meteogram, #r_meteogram,
+#l_aerogram, #r_aerogram {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.07);
+    padding: 30px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header button {
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 23px;
+    padding: 0;
+    min-width: 55px;
+}
+
+.header button:hover {
+    color: #000;
+    border-bottom: 2px solid #0606A3;
+}
+
+.header button:focus {
+    outline: none;
+}
+
+.map{
+    width: calc(100vw / 2 - 120px);
+    height: calc(100vw / 3.236 - 75px);
+    display: block;
+    z-index: 0;
+    display: none;
+}
+
+.list {
+    height: calc(100vw / 3.236 - 75px);
+    overflow: auto;
+}
+
+.list ul {
+    list-style: none;
+}
+.list li a {
+    display: block;
+    width: 500px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.list li a:hover {
+    color: #000;
+    border-left: 2px solid #0606A3;
+    box-shadow: inset -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.meteo_popup {
+    position: absolute;
+    top: 0;
+    height:100%;
+    width:50%;
+    display:none;
+    text-align:center;
+}
+
+#l_meteo_popup, #l_aero_popup {
+    left: 0;
+}
+
+#r_meteo_popup, #r_aero_popup {
+    right: 0;
+}
+
+.meteo_popup_bg {
+    background:rgba(0,0,0,0.5);
+    position:absolute;
+    z-index:5;
+    height:100%;
+    width:100%;
+}
+
+.meteo_workspace {
+    position: relative;
+    z-index:6;
+    width: calc(100vw / 2 - 100px);
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.07);
+    padding: 30px;
+}
+
+.meteo_workspace h2 {
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.meteo_workspace_nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.aero_button {
+    text-align: left;
+}
+
+.aero_map {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* extra info  */
+.accordeon {
+    width: 70%;
+}
+
+.acc-head {
+	padding: 15px;
+	cursor: pointer;
+    border-top: 1px solid #c0c0c0;
+}
+
+.last {
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.acc-head:hover, .acc-body a:hover {
+    border-left: 4px solid #0606A3;
+    box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1);
+}
+
+.acc-body {
+	padding: 10px;
+	margin-bottom: 5px;
+    padding-left: 30px;
+	display: none;
+}
+
+.acc-body a {
+    display: block;
+    padding: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 12px 16px;
+}
+
+table thead tr {
+    font-weight: bold;
+    border-top: 1px solid #e8e9eb;
+    text-align: center;
+}
+
+table tr {
+    border-bottom: 1px solid #e8e9eb;
+    text-align: center;
+}
